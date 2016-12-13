@@ -5,7 +5,6 @@ function init() {
 
         let child = document.createElement('li');
 
-
         let image = document.createElement('img');
         image.src = 'https://randomuser.me/api/portraits/men/90.jpg';
         child.appendChild(image);
@@ -19,6 +18,7 @@ function init() {
         like.textContent = 'Like';
         like.addEventListener('click', function(){
             console.log('Likes ' + heading.textContent)
+            child.classList.add('faded');
         })
 
         let nope = document.createElement('button');
@@ -26,6 +26,7 @@ function init() {
         nope.textContent = 'Nope';
             nope.addEventListener('click', function(){
                 console.log(heading.textContent + ' has been noped')
+                child.classList.add('faded');
             })
 
         let parent = document.querySelector('#bio');

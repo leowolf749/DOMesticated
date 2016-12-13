@@ -1,7 +1,16 @@
 h1 {
     background-color: lightblue;
+    color: floralwhite;
 }
 
 li {
     list-style-type: none;
+}
+
+ul {
+    background-color: floralwhite;
+}
+
+.faded {
+    opacity: 0.3;
 }
